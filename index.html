@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./dom.js" defer></script>
+  <title>Basic Morse Code Translator</title>
+</head>
+<body>
+<header class="header">
+  <h1>Basic Morse Code Translator</h1>
+</header>
+<main class="main">
+<form id="form">
+    <div class="main_fields">
+      <div class="main_fields_input">
+        <label for="inputField">Input:</label>
+        <textarea name="inputField" id="inputField" rows="10" cols="30" placeholder="Enter text to translate here!"></textarea>
+        </textarea>
+      </div>
+      <div class="main_fields_output">
+        <label for="outputField">Output:</label>
+        <textarea name="outputField" id="outputField"  rows="10" cols="30" placeholder="Output appears here!"></textarea>
+      </div>
+  </div> 
+  <div class="main_controls">
+    <button type="submit" class="main_controls_btns">Translate</button>
+    <button type="reset" class="main_controls_btns">Clear</button>
+  </div>
+  
+    <div class="main_info">
+      <h3>How to use this page</h3>
+      <p>Type in input, starting with either English character(a-z, 0-9), or Morse (. or -) for the application to determine type of translation required.</p>
+      <p>This application only supports the following:</p>
+      <p>For English To Morse:</p>
+      <p>Numbers: 0-9 Letters: A-Z Spaces: normal spaces</p>
+      <p>For Morse To English:</p>
+      <p>Dots & Dashes: . - Spaces: normal spaces
+      <p>IMPORTANT: All Morse code block must have / between each character and space</p>
+      <p>Unsupported characters will display as # in the output</p>
+    </div>
+</form>
+</main>
+
+  
+</body>
+</html>
